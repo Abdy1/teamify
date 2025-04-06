@@ -1,0 +1,62 @@
+/* Reset margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navbar container */
+  .navbar {
+    display: flex;
+    justify-content: space-between;  /* Spread the elements across the navbar */
+    align-items: center;  /* Align vertically */
+    padding: 10px 30px;  /* Padding around the navbar */
+    background-color: transparent;  /* No background */
+    position: fixed;  /* Fixed at the top of the page */
+    top: 0;
+    width: 100%;
+    z-index: 100;  /* Keep navbar on top of other elements */
+  }
+  
+  /* Logo styling */
+  .logoImage {
+    height: 40px;  /* Adjust based on your logo size */
+    width: auto;
+  }
+  
+  /* Links container in the middle */
+  .links {
+    display: flex;
+    gap: 20px;  /* Space between links */
+  }
+  
+/* Individual link styling */
+.link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: text-decoration 0.3s ease;
+  }
+  
+  .link:hover {
+    text-decoration: underline;  /* Add underline on hover */
+  }
+  
+  
+  .signInButton {
+    background-color: #ffa200;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signInButton:hover {
+    background-color: #e68900;  
+  }
+  

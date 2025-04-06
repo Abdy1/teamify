@@ -1,0 +1,74 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden; 
+  }
+  
+  .home-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;  /* Center horizontally */
+    justify-content: flex-start;  
+    height: 100vh; 
+    text-align: center;
+    padding-top: 20px;  
+    overflow: hidden;  /* Prevent overflow */
+  }
+  
+  .welcome-text {
+    display: flex;  
+    flex-direction: row; /* Align text horizontally */
+    gap: 10px; 
+    align-items: center; /* Align vertically in the center */
+    margin-bottom: 300px;
+  }
+  
+  .welcome-title {
+    font-size: 2.5rem;
+    color: white;
+  }
+  
+  .virtual-office {
+    font-size: 3rem;
+    color: #ffa200;  /* Virtual Office text color */
+    font-weight: bold;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    flex-direction: row;  /* Align buttons horizontally */
+    gap: 20px;  
+  }
+  
+  .instant-demo {
+    background-color: #ffa200;  /* Background color */
+    color: white;  /* Text color */
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 250px;  /* Fixed width */
+  }
+  
+  .instant-demo:hover {
+    background-color: #cc8100;  
+  }
+  
+  .setup-company {
+    background-color: transparent;
+    border: 2px solid #ffa200;  /* Border color */
+    color: #ffa200; 
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 250px;  /* Fixed width */
+  }
+  
+  .setup-company:hover {
+    background-color: #ffa200;  
+    color: white;  /* Change text color on hover */
+  }
+  

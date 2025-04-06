@@ -1,0 +1,102 @@
+/* Container for the form */
+.formContainer {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  width: 400px;
+  margin: 50px auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  max-height: 90%;
+  overflow-y: auto;
+
+}
+
+body, html {
+  overflow: hidden;  
+  height: 100%;  /* Ensure the body takes up the full height */
+}
+
+
+/* Header */
+.header {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  color: black;
+}
+
+/* Circular image placeholder */
+.imageContainer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.imagePlaceholder {
+  font-size: 2rem;
+  color: #ccc;
+  width: 80px;
+  height: 80px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+/* Input fields container */
+.inputContainer {
+  margin-bottom: 20px;
+  color: black;
+}
+
+/* Label style */
+label {
+  color: black;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Required asterisk */
+.required {
+  color: red;
+}
+
+/* Input field */
+.inputField {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: black;
+}
+
+.inputField:focus {
+  border-color: #1d3752;
+  outline: none;
+}
+
+/* Continue button */
+.continueButton {
+  width: 100%;
+  padding: 12px;
+  background-color: #1d3752;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.continueButton:hover {
+  background-color: #1a2d43;
+}
+
