@@ -1,7 +1,15 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate hook
 import styles from './SignUp.module.css'; // Import CSS module
 
 function SignUp() {
+  const navigate = useNavigate(); // Initialize useNavigate hook
+
+  const handleContinue = (e) => {
+    e.preventDefault();  // Prevent default form submission behavior
+    navigate('/csign-up'); // Navigate to the Complete Sign Up page
+  };
+
   return (
     <div className={styles.formContainer}>
       <h1 className={styles.header}>Set Up Your Office</h1>
@@ -11,7 +19,7 @@ function SignUp() {
         <span className={styles.imagePlaceholder}>+</span>
       </div>
 
-      <form>
+      <form onSubmit={handleContinue}>
         {/* Full Name */}
         <div className={styles.inputContainer}>
           <label htmlFor="fullName">
@@ -116,8 +124,6 @@ function SignUp() {
         {/* Continue Button */}
         <button className={styles.continueButton}>Continue</button>
       </form>
-
-  
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Home.module.css'; 
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
@@ -10,7 +11,9 @@ function Home() {
       </div>
       <div className={styles['cta-buttons']}>
         <button className={styles['instant-demo']}>Instant Demo</button>
-        <button className={styles['setup-company']}>Pricing</button>
+        <Link to="/pricing">
+          <button className={styles['setup-company']}>Pricing</button>
+        </Link>
       </div>
     </div>
   );

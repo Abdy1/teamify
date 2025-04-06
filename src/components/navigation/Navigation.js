@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from './Navigation.module.css';  // Import CSS for Navigation
-
+import { Link } from 'react-router-dom';
+import styles from './Navigation.module.css';  
 function Navigation() {
   return (
     <nav className={styles.navbar}>
@@ -13,8 +13,11 @@ function Navigation() {
         <a href="#about" className={styles.link}>About Us</a>
         <a href="#contact" className={styles.link}>Contact Us</a>
       </div>
+      
       <div className={styles.signIn}>
-        <button className={styles.signInButton}>Sign In</button>
+        <Link to="/form">
+          <button className={styles.signInButton}>Sign In</button>
+        </Link>
       </div>
     </nav>
   );
