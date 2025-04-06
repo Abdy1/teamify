@@ -1,36 +1,31 @@
-/* Reset margins and paddings */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  /* Navbar container */
   .navbar {
     display: flex;
-    justify-content: space-between;  /* Spread the elements across the navbar */
-    align-items: center;  /* Align vertically */
-    padding: 10px 30px;  /* Padding around the navbar */
-    background-color: transparent;  /* No background */
-    position: fixed;  /* Fixed at the top of the page */
+    justify-content: space-between;  
+    align-items: center;  
+    padding: 10px 30px;  
+    background-color: transparent;  
+    position: fixed;  
     top: 0;
     width: 100%;
-    z-index: 100;  /* Keep navbar on top of other elements */
+    z-index: 100; 
   }
   
-  /* Logo styling */
   .logoImage {
-    height: 40px;  /* Adjust based on your logo size */
+    height: 40px;  
     width: auto;
   }
   
-  /* Links container in the middle */
   .links {
     display: flex;
-    gap: 20px;  /* Space between links */
+    gap: 20px; 
   }
   
-/* Individual link styling */
 .link {
     color: white;
     text-decoration: none;
@@ -40,7 +35,7 @@
   }
   
   .link:hover {
-    text-decoration: underline;  /* Add underline on hover */
+    text-decoration: underline; 
   }
   
   

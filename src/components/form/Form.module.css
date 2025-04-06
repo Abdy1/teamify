@@ -10,7 +10,7 @@
   left: 50%; 
   transform: translate(-50%, -50%); 
   max-height: 80vh; 
-  overflow-y: auto; /* Allow scrolling if content overflows */
+  overflow-y: auto;
 }
 
 body, html {
@@ -64,7 +64,7 @@ input:focus {
   border-radius: 4px;
   font-size: 1.1rem;
   cursor: pointer;
-  margin-top: 10px; /* Add space before the button */
+  margin-top: 10px; 
 }
 
 .continueButton:hover {

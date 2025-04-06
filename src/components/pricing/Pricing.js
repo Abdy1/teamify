@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; // Import Link
+import { Link } from 'react-router-dom'; 
 import styles from './Pricing.module.css';
 
 const Pricing = () => {
@@ -33,7 +33,7 @@ const Pricing = () => {
           <p className={styles.description}>
             The basic plan suitable for individuals and small teams.
           </p>
-          <Link to="/summary?plan=standard"> {/* Navigate to the Summary page with a query param */}
+          <Link to="/summary?plan=standard"> 
             <button className={styles.chooseBtn}>Choose Plan</button>
           </Link>
         </div>
@@ -44,7 +44,7 @@ const Pricing = () => {
           <p className={styles.description}>
             A popular plan for growing teams with additional features.
           </p>
-          <Link to="/summary?plan=premium"> {/* Navigate to the Summary page with a query param */}
+          <Link to="/summary?plan=premium"> 
             <button className={styles.chooseBtn}>Choose Plan</button>
           </Link>
         </div>
@@ -55,7 +55,7 @@ const Pricing = () => {
           <p className={styles.description}>
             Advanced tools and priority support for large teams.
           </p>
-          <Link to="/summary?plan=enterprise"> {/* Navigate to the Summary page with a query param */}
+          <Link to="/summary?plan=enterprise"> 
             <button className={styles.chooseBtn}>Choose Plan</button>
           </Link>
         </div>

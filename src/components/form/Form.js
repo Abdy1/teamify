@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';  // Import Link from react-router-dom
+import { Link } from 'react-router-dom'; 
 import styles from './Form.module.css'; 
 
 function Form() {
@@ -19,7 +19,6 @@ function Form() {
       <button className={styles.continueButton}>Continue</button>
 
       <div className={styles.signUp}>
-        {/* Replace <a> with Link to navigate to the Sign Up page */}
         <span>Don't have an account? <Link to="/sign-up">Sign Up</Link></span>
       </div>
 

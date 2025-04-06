@@ -1,13 +1,12 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';  // Import useLocation to get the query parameters
+import { useLocation } from 'react-router-dom';  
 import styles from './Summary.module.css';
 
 const Summary = () => {
   const location = useLocation();
-  const queryParams = new URLSearchParams(location.search); // Parse the query params
-  const selectedPlan = queryParams.get('plan'); // Get the 'plan' query param
+  const queryParams = new URLSearchParams(location.search); 
+  const selectedPlan = queryParams.get('plan'); 
 
-  // Function to get details based on the selected plan
   const getPlanDetails = (plan) => {
     switch (plan) {
       case 'standard':

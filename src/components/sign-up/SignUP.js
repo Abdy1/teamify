@@ -1,26 +1,24 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate hook
-import styles from './SignUp.module.css'; // Import CSS module
+import { useNavigate } from 'react-router-dom'; 
+import styles from './SignUp.module.css';
 
 function SignUp() {
-  const navigate = useNavigate(); // Initialize useNavigate hook
+  const navigate = useNavigate(); 
 
   const handleContinue = (e) => {
-    e.preventDefault();  // Prevent default form submission behavior
-    navigate('/csign-up'); // Navigate to the Complete Sign Up page
+    e.preventDefault();  
+    navigate('/csign-up'); 
   };
 
   return (
     <div className={styles.formContainer}>
       <h1 className={styles.header}>Set Up Your Office</h1>
 
-      {/* Circular Image Placeholder */}
       <div className={styles.imageContainer}>
         <span className={styles.imagePlaceholder}>+</span>
       </div>
 
       <form onSubmit={handleContinue}>
-        {/* Full Name */}
         <div className={styles.inputContainer}>
           <label htmlFor="fullName">
             Enter Your Name <span className={styles.required}>*</span>
@@ -34,7 +32,6 @@ function SignUp() {
           />
         </div>
 
-        {/* Email */}
         <div className={styles.inputContainer}>
           <label htmlFor="email">
             Enter Your Email <span className={styles.required}>*</span>
@@ -48,7 +45,6 @@ function SignUp() {
           />
         </div>
 
-        {/* Company Name */}
         <div className={styles.inputContainer}>
           <label htmlFor="companyName">
             Your Company Name <span className={styles.required}>*</span>
@@ -62,7 +58,6 @@ function SignUp() {
           />
         </div>
 
-        {/* Company Website */}
         <div className={styles.inputContainer}>
           <label htmlFor="companyWebsite">
             Your Company Website <span className={styles.required}>*</span>
@@ -76,7 +71,6 @@ function SignUp() {
           />
         </div>
 
-        {/* Company Size */}
         <div className={styles.inputContainer}>
           <label htmlFor="companySize">
             Choose Your Company Size <span className={styles.required}>*</span>
@@ -93,7 +87,6 @@ function SignUp() {
           </select>
         </div>
 
-        {/* Create Password */}
         <div className={styles.inputContainer}>
           <label htmlFor="password">
             Create Password <span className={styles.required}>*</span>
@@ -107,7 +100,6 @@ function SignUp() {
           />
         </div>
 
-        {/* Confirm Password */}
         <div className={styles.inputContainer}>
           <label htmlFor="confirmPassword">
             Confirm Password <span className={styles.required}>*</span>
@@ -121,7 +113,6 @@ function SignUp() {
           />
         </div>
 
-        {/* Continue Button */}
         <button className={styles.continueButton}>Continue</button>
       </form>
     </div>
